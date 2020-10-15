@@ -1,0 +1,70 @@
+/* Made with love by Mutiullah Samim*/
+
+
+html,body{
+background-image: url('https://marissaskin.my/wp-content/uploads/2019/04/134025-cool-medical-wallpaper-2000x1153-ipad-retina.jpg');
+background-size: cover;
+height: 100%;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 500px;
+margin-top: auto;
+margin-bottom: auto;
+width: 700px;
+background-color: rgba(0,0,0,0.7) !important;
+}
+
+.card-header h1{
+color: white;
+}
+
+.form-group, .form-control{
+    height: 50px;
+}
+
+.input-group-prepend i{
+width: 100px;
+padding-top: 15px;
+background-color: #950714;
+color: white;
+font-weight: 600;
+border:0;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: white;
+background-color:#950714 ;
+width: 200px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.card-footer h5{
+    color: white;
+}
