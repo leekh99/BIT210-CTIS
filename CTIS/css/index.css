@@ -1,0 +1,32 @@
+.search .input-group, .search, .search .form-group{
+    border-radius: 10rem;
+}
+
+.search .input-group .form-control{
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+}
+
+.search input{
+    padding: 1rem 3rem;
+}
+
+#btnSearch{
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+#patient-details{
+    padding-top: 3rem;
+}
+
+.patient-list .card{
+    min-width:800px;
+    margin-bottom: 30px;
+}
+
+.filter .card{
+    background-color: #e3e3e3;
+    padding: 20px;
+    min-width: 250px;
+}

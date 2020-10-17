@@ -2,7 +2,8 @@
 
 
 html,body{
-background-image: url('https://marissaskin.my/wp-content/uploads/2019/04/134025-cool-medical-wallpaper-2000x1153-ipad-retina.jpg');
+/* background-image: url('https://marissaskin.my/wp-content/uploads/2019/04/134025-cool-medical-wallpaper-2000x1153-ipad-retina.jpg'); */
+background: url('https://blockchainstock.blob.core.windows.net/article/1CCD2BEF26A719CAB2D571154514A5E90E64CF32E69B0C41C69163AF57BAF3F0.jpg');
 background-size: cover;
 height: 100%;
 }
