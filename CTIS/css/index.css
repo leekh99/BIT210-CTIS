@@ -17,16 +17,22 @@
 }
 
 #patient-details{
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .patient-list .card{
-    min-width:800px;
     margin-bottom: 30px;
+}
+
+.patient-details aside{
+    padding-left: 20px;
 }
 
 .filter .card{
     background-color: #e3e3e3;
     padding: 20px;
-    min-width: 250px;
 }
+
+@media only screen and (max-width: 768px) {
+
+} 

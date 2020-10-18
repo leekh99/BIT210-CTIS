@@ -1,3 +1,7 @@
+#wrapper{
+  overflow: hidden;
+}
+
 header{
   padding-top: 30px;
   justify-content: space-between;
@@ -22,7 +26,8 @@ header{
 }
 
 .btn:hover{
-  background-color: #f8ecf8;
+  /* background-color: #f8ecf8; */
+  background-color: #b3b3b3;
   box-shadow:  0 0 8px rgba(114, 96, 153, 0.6);
 }
 
@@ -79,6 +84,17 @@ min-width: 100vw;
 margin-left: 0;
 }
 
+
+a.disabled{
+  color: gray;
+  pointer-events: none;
+}
+
+a.highlight{
+  color: #c793c9;
+  font-weight: 900;
+  pointer-events: none;
+}
   
 @media (min-width: 768px) {
   #sidebar-wrapper {

@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTIS - Home</title>
+
+    <!-- setup -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4344e99275.js" crossorigin="anonymous"></script>
+    
+    <!-- local files -->
     <link rel="shortcut icon" href="img/ctisIcon_noBackgroundV2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <!-- <header>
-        <div class="img-fluid"><img src="img/ctisLogo_bigger.JPG" alt=""></div>
-    </header> -->
     <nav id="container page-content-wrapper">
         <div class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <button class="btn btn-primary shadow" id="menu-toggle"> 
@@ -42,9 +43,10 @@
         <!-- side bar -->
         <aside class="bg-light border-right " id="sidebar-wrapper">
             <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item  bg-light">Record New Test</a>
-            <a href="#" class="list-group-item bg-light">Update Test Result</a>
-            <a href="#" class="list-group-item bg-light">Generate Test Report</a>
+            <a href="index.html" class="list-group-item list-group-item-action bg-light highlight ">Home</a>  
+            <a href="recordTest.html" class="list-group-item list-group-item-action bg-light">Record New Test</a>
+            <a href="updateTest.html" class="list-group-item list-group-item-action bg-light">Update Test Result</a>
+            <a href="viewTestReport.html" class="list-group-item list-group-item-action bg-light">Generate Test Report</a>
             </div>
         </aside> 
 
@@ -62,67 +64,69 @@
 
 
             <section id="patient-details">
-                <aside class="float-right filter">
-                    <div class="card shadow">
-                        <h5 class="card-title">Filter by</h5>
-                        <input type="text">
-                        <label for="">Last Updated</label>
-                        <input type="text">
-
-                    </div>
-                </aside>
-
-                <section class="patient-list float-left">
-                    <div class="card shadow">
-                        <h5 class="card-header"><span>ID :</span>  Patient name</h5>
-                        <div class="card-body">
-                          <h5 class="card-title">Patient-type: </h5>
-                          <h5 class="card-text">Symptoms: </h5>
-                          <blockquote>
-                              <p>bla bla bla</p>
-                              <footer class="blockquote-footer">dr tan</footer>
-                          </blockquote>
-                        </div>
-                        <ul class="list-group border-top list-group-flush">
-                          <li class="list-group-item">Covid Test Taken: </li>
-                          <ul class="list-group list-group-flush">
-                              <li class="list-group-item">T1: cough</li>
-                          </ul>
-                        </ul>
-                        <div class="card-body">
-                            <div class="d-flex flex-row justify-content">
-                                <a href="#" class="card-link btn btn-primary">Record New Test</a>
-                                <a href="#" class="card-link btn btn-primary">Update Test Result</a>
+                <div class="row">
+                    <section class="patient-list col-md-9 col-xs-12 flex">
+                        <div class="card shadow">
+                            <h5 class="card-header"><span>ID :</span>  Patient name</h5>
+                            <div class="card-body">
+                              <h5 class="card-title">Patient-type: </h5>
+                              <h5 class="card-text">Symptoms: </h5>
+                              <blockquote>
+                                  <p>bla bla bla</p>
+                                  <footer class="blockquote-footer">dr tan</footer>
+                              </blockquote>
                             </div>
-                       
-                        </div>
-                      </div>
-
-                      <div class="card shadow">
-                        <h5 class="card-header"><span>ID :</span>  Patient name</h5>
-                        <div class="card-body">
-                          <h5 class="card-title">Patient-type: </h5>
-                          <h5 class="card-text">Symptoms: </h5>
-                          <blockquote>
-                              <p>bla bla bla</p>
-                              <footer class="blockquote-footer">dr tan</footer>
-                          </blockquote>
-                        </div>
-                        <ul class="list-group border-top list-group-flush">
-                          <li class="list-group-item">Covid Test Taken: </li>
-                          <ul class="list-group list-group-flush">
-                              <li class="list-group-item">T1: cough</li>
-                          </ul>
-                        </ul>
-                        <div class="card-body">
-                            <div class="d-flex flex-row justify-content">
-                                <a href="#" class="card-link btn btn-primary">Record New Test</a>
-                                <a href="#" class="card-link btn btn-primary">Update Test Result</a>
+                            <ul class="list-group border-top list-group-flush">
+                              <li class="list-group-item">Covid Test Taken: </li>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">T1: cough</li>
+                              </ul>
+                            </ul>
+                            <div class="card-body">
+                                <div class="d-flex flex-row justify-content">
+                                    <a href="#" class="card-link btn btn-primary shadow">Record New Test</a>
+                                    <a href="#" class="card-link btn btn-primary shadow">Update Test Result</a>
+                                </div>
+                           
                             </div>
-                       
+                          </div>
+    
+                          <div class="card shadow">
+                            <h5 class="card-header"><span>ID :</span>  Patient name</h5>
+                            <div class="card-body">
+                              <h5 class="card-title">Patient-type: </h5>
+                              <h5 class="card-text">Symptoms: </h5>
+                              <blockquote>
+                                  <p>bla bla bla</p>
+                                  <footer class="blockquote-footer">dr tan</footer>
+                              </blockquote>
+                            </div>
+                            <ul class="list-group border-top list-group-flush">
+                              <li class="list-group-item">Covid Test Taken: </li>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">T1: cough</li>
+                              </ul>
+                            </ul>
+                            <div class="card-body">
+                                <div class="d-flex flex-row justify-content">
+                                    <a href="#" class="card-link btn btn-primary shadow">Record New Test</a>
+                                    <a href="#" class="card-link btn btn-primary shadow">Update Test Result</a>
+                                </div>
+                           
+                            </div>
+                          </div>
+                    </section>
+    
+                    <!-- filter category -->
+                    <aside class="d-flex filter col-md-3 hidden-xs justify-content-end">
+                        <div class="card shadow h-25">
+                            <h5 class="card-title">Filter by</h5>
+                            <input type="text">
+                            <label for="">Last Updated</label>
+                            <input type="text">
                         </div>
-                      </div>
-                </section>
+                    </aside>
+                </div>
             </section>
 
         </div>
@@ -138,12 +142,14 @@
             $("#wrapper").toggleClass("toggled");
             $("#menu-icon").removeClass("fas fa-times");
             $("#menu-icon").addClass("fas fa-bars");
-        } 
+        }
+ 
 
         $("#menu-toggle").click(function() {
             $("#wrapper").toggleClass("toggled");
             $("#menu-icon").toggleClass("fas fa-bars");
             $("#menu-icon").toggleClass("fas fa-times");
+            
         });
       </script>
 </body>
