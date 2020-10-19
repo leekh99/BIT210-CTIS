@@ -1,0 +1,76 @@
+[
+    {
+        "Type": "Patient",
+        "username": "Henry",
+        "name" : "Yan Ming",
+        "password" : "12311",
+        "patientType" : "returnee",
+        "symptoms" : "having a bad fever and some vomiting"
+    },
+    {
+        "Type" : "CentreOfficer",
+        "username" : "James",
+        "name" : "Lee Xin Jing",
+        "password" : "qwe",
+        "position" : "Manager"
+    },
+    {
+        "Type" : "CentreOfficer",
+        "username" : "James",
+        "name" : "Lee Xin Jing",
+        "password" : "qwe",
+        "position" : "Tester"
+    },
+    {
+        "Type" : "Patient",
+        "username" : "Jason",
+        "name" : "Ming Le",
+        "password" : "ml123",
+        "patientType" : "suspected",
+        "symptoms" : "loss of speech"
+    },
+    {
+        "Type" : "CentreOfficer",
+        "username" : "Joey",
+        "name" : "Kuan Qi",
+        "password" : "kq0!",
+        "position" : "Tester"
+    },
+    {
+        "Type" : "Patient",
+        "username" : "Jackie",
+        "name" : "Zhen Quan",
+        "password" : "zq000",
+        "patientType" : "quarantined",
+        "symptoms" : "having a serious headache and sore throat"
+    },
+    {
+        "Type" : "CentreOfficer",
+        "username" : "Aaron",
+        "name" : "Zi Jia",
+        "password" : "Zj123!",
+        "position" : "Manager"
+    },
+    {
+        "Type" : "CentreOfficer",
+        "username" : "Jimmy",
+        "name" : "Jia Quan",
+        "password" : "jq0!",
+        "position" : "Manager"
+    },
+    {
+        "Type" : "Patient",
+        "username" : "Ryan",
+        "name" : "Kun Ming",
+        "password" : "km12345",
+        "patientType" : "infected",
+        "symptoms" : "difficulty breathing or shortness of breath"
+    },
+    {
+        "Type" : "CentreOfficer",
+        "username" : "Bella",
+        "name" : "Zi Qing",
+        "password" : "zq012!",
+        "position" : "Tester"
+    }
+]
