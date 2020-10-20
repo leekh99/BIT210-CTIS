@@ -34,13 +34,20 @@ header{
 
 .btn-primary{
   background-color: #dba2dd !important;
-  background-image: linear-gradient(to right bottom, #f5a3c4, #dba2dd) !important;
+  background-image: linear-gradient(to right bottom, #dba2dd, #803082) !important;
   border-color: #dba2dd !important;
 }
 
 .btn-primary:not(:disabled):not(.disabled):focus{
   box-shadow: 0 0 5px black;
 }
+
+.btn-primary:hover{
+  background-color: #f5a3c4 !important;
+  background-image: none !important;
+  color: black;
+}
+/* } still thinking */
 
 @keyframes menuSlideIn{
   from {opacity: 0;
