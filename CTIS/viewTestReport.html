@@ -8,7 +8,7 @@
     <!-- setup -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4344e99275.js" crossorigin="anonymous"></script>
-    
+
     <!-- local files  -->
     <link rel="shortcut icon" href="img/ctisIcon_noBackgroundV2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
 <body>
     <nav id="container page-content-wrapper">
         <div class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <button class="btn btn-primary shadow" id="menu-toggle"> 
+            <button class="btn btn-primary shadow" id="menu-toggle">
               <i class="fas fa-bars" id="menu-icon"></i>
             </button>
             <div class="mx-auto">
@@ -35,7 +35,7 @@
                     <a href="#" class="dropdown-item bg-light">Logout</a>
                 </aside>
             </div>
-            
+
         </div>
     </nav>
 
@@ -44,12 +44,16 @@
         <!-- side bar -->
         <aside class="bg-light border-right " id="sidebar-wrapper">
             <div class="list-group list-group-flush">
-            <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>  
+            <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
             <a href="recordTest.html" class="list-group-item list-group-item-action bg-light">Record New Test</a>
             <a href="updateTest.html" class="list-group-item list-group-item-action bg-light">Update Test Result</a>
             <a href="#" class="list-group-item list-group-item-action bg-light highlight">Generate Test Report</a>
+            <a href="registerTestCentre.html" class="list-group-item list-group-item-action bg-light">Register Test Centre</a>
+            <a href="registerTester.html" class="list-group-item list-group-item-action bg-light">Register Tester Account</a>
+            <a href="manageTestKitStock.html" class="list-group-item list-group-item-action bg-light">Manage Test Kit Stock</a>
+            <a href="vieweTestingHistory.html" class="list-group-item list-group-item-action bg-light">View Testing History</a>
             </div>
-        </aside> 
+        </aside>
 
         <div class="container">
             <!-- breadcrumb navigation -->
@@ -63,7 +67,7 @@
                 </nav>
             </header>
 
-            
+
             <!-- different generated test reports -->
             <section class="py-4">
 
@@ -89,12 +93,12 @@
                                         <div id="piechart" class="p-3"></div>
                                       </p>
                                     </div>
-                                    <div class="card-footer"><i class="far fa-clock"></i> Last updated : 
+                                    <div class="card-footer"><i class="far fa-clock"></i> Last updated :
                                         <time> 19/10/2020 </time>
                                     </div>
                                   </div>
                             </div>
-                     
+
                             <div class="col-md-6 col-xs-12 py-3">
                               <div class="card shadow ">
                                 <div class="card-body">
@@ -103,7 +107,7 @@
                                       <div id="barchart" class="p-3"></div>
                                   </p>
                                 </div>
-                                <div class="card-footer"><i class="far fa-clock"></i> Last updated : 
+                                <div class="card-footer"><i class="far fa-clock"></i> Last updated :
                                     <time> 19/10/2020 </time>
                                 </div>
                               </div>
@@ -119,13 +123,13 @@
                                           <div id="linechart" class="p-3"></div>
                                       </p>
                                     </div>
-                                    <div class="card-footer"><i class="far fa-clock"></i> Last updated : 
+                                    <div class="card-footer"><i class="far fa-clock"></i> Last updated :
                                         <time> 19/10/2020 </time>
                                     </div>
                                   </div>
                             </div>
                         </div>
-                       
+
                     </section>
 
 
@@ -165,9 +169,9 @@
             </section>
 
         </div>
-        
 
-      
+
+
     </main>
     <footer></footer>
 
@@ -182,15 +186,14 @@
             $("#menu-icon").removeClass("fas fa-times");
             $("#menu-icon").addClass("fas fa-bars");
         }
- 
+
 
         $("#menu-toggle").click(function() {
             $("#wrapper").toggleClass("toggled");
             $("#menu-icon").toggleClass("fas fa-bars");
             $("#menu-icon").toggleClass("fas fa-times");
-            
+
         });
       </script>
 </body>
 </html>
-
