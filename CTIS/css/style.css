@@ -47,7 +47,16 @@ header{
     opacity: 0.5;
     box-shadow:  0 0 10px rgba(58, 49, 77, 0.6) !important;
 }
-/* } still thinking */
+
+.loader {
+  margin: 5rem auto;
+  text-align: center; 
+}
+
+.loader img{
+  height: 5.5rem;
+  width: 5.5rem;
+}
 
 @keyframes menuSlideIn{
   from {opacity: 0;

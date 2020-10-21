@@ -39,7 +39,7 @@ const displayForm = () => {
         </div>
 
         <div class="form-group">
-        <input class="btn btn-primary" type="submit" name="add_test" value="Add Test to Patient" >
+            <button class="btn btn-primary" type="submit" name="add_test">Add Test to Patient</button>
         </div>
     </form>`;
 

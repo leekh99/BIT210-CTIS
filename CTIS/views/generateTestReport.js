@@ -44,51 +44,6 @@ const elements = {
      barchart.draw(data,options);
    }
 
-   
 
-
-const removeElement = ()=> {
-    let el = true;
-    do {
-        el = document.querySelector(`.analysis .row`);
-        if (el) el.parentElement.removeChild(el);
-    } while (el);
-}
-
-document.getElementById('table-tab').addEventListener('click', removeElement);
-
-
-
-const markup = `
-<table class="table">
-    <thead class="thead-dark">
-        <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        </tr>
-        <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        </tr>
-        <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-        </tr>
-    </tbody>
-  </table>`;
 
 
