@@ -36,6 +36,7 @@ header{
   background-color: #dba2dd !important;
   background-image: linear-gradient(to right bottom, #dba2dd, #803082) !important;
   border-color: #dba2dd !important;
+  transition: opacity 0.5s;
 }
 
 .btn-primary:not(:disabled):not(.disabled):focus{
@@ -43,9 +44,8 @@ header{
 }
 
 .btn-primary:hover{
-  background-color: #f5a3c4 !important;
-  background-image: none !important;
-  color: black;
+    opacity: 0.5;
+    box-shadow:  0 0 10px rgba(58, 49, 77, 0.6) !important;
 }
 /* } still thinking */
 

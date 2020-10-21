@@ -18,7 +18,7 @@ const displayForm = () => {
     const markup = `
     <form action="" enctype="multipart/form-data" id="toggle">
         <div class="form-group">
-            <label for="patient_username">Patient's Test</label>
+            <label for="patient_username">Patient's Username</label>
             <input type="text" class="form-control" name="patient_username">
         </div>
 
