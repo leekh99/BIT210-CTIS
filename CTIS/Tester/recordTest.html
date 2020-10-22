@@ -76,7 +76,7 @@
                     <form action="" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="patient_username">Patient's Username</label>
-                            <input type="text" class="form-control" name="patient_username" required>
+                            <input type="text" id="focusUsername" class="form-control" name="patient_username" required>
                         </div>
 
                         <div class="form-group">
@@ -119,7 +119,32 @@
 
                 <!-- add test to existing patient account -->
                 <div id="test-form">
-                    <!-- load it from javascript -->
+                    <form action="" enctype="multipart/form-data" id="toggle">
+                        <div class="form-group">
+                            <label for="patient_username">Patient's Username</label>
+                            <input type="text" id="focusDefaultUsername" class="form-control" name="patient_username" required autofocus>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="patient_type">Patient Type</label>
+                            <select class="form-control" name="patient_type">
+                                <option value="returnee">Returnee</option>
+                                <option value="quarantined">Quarantined</option>
+                                <option value="close_contact">Close Contact</option>
+                                <option value="infected">Infected</option>
+                                <option value="suspected">Suspected</option>
+                            </select>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="patient_symptom">Patient's Symptoms</label>
+                            <textarea class="form-control" name="patient_symptom" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="add_test">Add Test to Patient</button>
+                        </div>
+                    </form>
                 </div>
             </section>
         </div>
