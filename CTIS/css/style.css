@@ -129,6 +129,14 @@ a.highlight{
   width: 100%;
   padding: 1rem;
 }
+
+.form-control:focus {
+  outline: none !important;
+  border: 3px solid #55c57a;
+}
+.form-control:focus:invalid {
+  border: 3px solid #ff7730;
+}
   
 @media (min-width: 768px) {
   #sidebar-wrapper {

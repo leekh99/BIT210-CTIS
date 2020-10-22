@@ -47,7 +47,22 @@
                 <a href="#" class="list-group-item list-group-item-action bg-light highlight">Home</a>
                 <a href="registerTestCentre.html" class="list-group-item list-group-item-action bg-light">Register Test Centre</a>
                 <a href="registerTester.html" class="list-group-item list-group-item-action bg-light">Register Tester</a>
-                <a href="manageTestKitStock.html" class="list-group-item list-group-item-action bg-light">Manage Test Kit Stock</a>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#manageTestKit" class="list-group-item list-group-item-action bg-light" id="navTestKit">
+                        Manage Test Kit Stock &emsp;<i class="fas fa-angle-down" id="navArrow"></i>
+                    </a>
+                    <ul id="manageTestKit" class="collapse list-group">
+                        <li>
+                            <a href="viewAllTestKit.html" class="list-group-item list-group-item-action bg-light">&emsp; View All Test Kit</a>
+                        </li>
+                        <li>
+                            <a href="addTestKit.html" class="list-group-item list-group-item-action bg-light">&emsp; Add Test Kit</a>
+                        </li>
+                        <li>
+                            <a href="updateTestKit.html" class="list-group-item list-group-item-action bg-light">&emsp; Update Test Kit</a>
+                        </li>
+                    </ul>
+                </li>
             </div>
         </aside>
 
@@ -171,6 +186,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
+         $("#navTestKit").click(function(){
+            $("#navArrow").toggleClass("fas fa-angle-down");
+            $("#navArrow").toggleClass("fas fa-angle-up");
+        });
+
         if(window.matchMedia('(max-width: 767px)').matches){
             $("#wrapper").toggleClass("toggled");
             $("#menu-icon").removeClass("fas fa-times");

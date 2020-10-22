@@ -76,33 +76,38 @@
                     <form action="" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="patient_username">Patient's Username</label>
-                            <input type="text" class="form-control" name="patient_username">
+                            <input type="text" class="form-control" name="patient_username" required>
                         </div>
 
                         <div class="form-group">
                             <label for="patient_name">Patient's Name</label>
-                            <input type="text" class="form-control" name="patient_name">
+                            <input type="text" class="form-control" name="patient_name" required>
                         </div>
 
                         <div class="form-group">
                             <label for="patient_password">Patient's Password</label>
-                            <input type="text" class="form-control" name="patient_password">
+                            <input type="text" class="form-control" name="patient_password" required minlength="5">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient_CrmPassword">Confirm Password</label>
+                            <input type="text" class="form-control" name="patient_CrmPassword" required minlength="5">
                         </div>
 
                         <div class="form-group">
                             <label for="patient_type">Patient Type</label>
                             <select class="form-control" name="patient_type">
-                            <option value="returnee">Returnee</option>
-                            <option value="quarantined">Quarantined</option>
-                            <option value="close_contact">Close Contact</option>
-                            <option value="infected">Infected</option>
-                            <option value="suspected">Suspected</option>
+                                <option value="returnee">Returnee</option>
+                                <option value="quarantined">Quarantined</option>
+                                <option value="close_contact">Close Contact</option>
+                                <option value="infected">Infected</option>
+                                <option value="suspected">Suspected</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="patient_symptom">Patient's Symptoms</label>
-                            <textarea class="form-control" name="patient_symptom" id="" cols="30" rows="10"></textarea>
+                            <textarea class="form-control" name="patient_symptom" id="" cols="30" rows="10" required></textarea>
                         </div>
 
                         <div class="form-group">
