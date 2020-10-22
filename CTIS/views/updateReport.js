@@ -7,6 +7,8 @@ const elements = {
 
 
 const renderLoader = () =>{
+    elements.testError.className = "invisible";
+    elements.testSuccess.className = "invisible";
     const loader = `
         <div class = "loader">
             <img src="../img/loading.gif" alt="loading">
@@ -30,11 +32,10 @@ const updateResults = (valid) => {
     elements.btnGenerate.disabled = false;
     elements.btnGenerate.style.pointerEvents = "";
     if (valid){
-        elements.testSuccess.style.visibility = "visible";
         elements.testSuccess.className = "";
     }
     else {
-        elements.testError.style.visibility = "visible";
+        elements.testError.className = "visible";
         elements.testSuccess.className = "collapse";
     }
 }

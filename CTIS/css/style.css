@@ -111,6 +111,24 @@ a.highlight{
   font-weight: 900;
   pointer-events: none;
 }
+
+.msg_successfull{
+  background-color: #adebad;
+  color: #196619;
+  border: 2px solid #196619;
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem;
+}
+
+.msg_error{
+  background-color: #ff9999;
+  color: #800000;
+  border: 2px solid #800000;
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem;
+}
   
 @media (min-width: 768px) {
   #sidebar-wrapper {

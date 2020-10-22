@@ -12,7 +12,6 @@
     <!-- local files -->
     <link rel="shortcut icon" href="../img/ctisIcon_noBackgroundV2.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/updateTest.css">
 </head>
 <body>
     <nav id="container page-content-wrapper">
@@ -75,8 +74,8 @@
             </section>
 
             <section id="testDetails">
-                <div id="covidTestDetails-success">
-                    <h5 class="ct_successfull">Covid Test with ID found successfully &emsp;<i class="fas fa-check-circle"></i></h5>
+                <div id="covidTestDetails-success" class="invisible">
+                    <h5 class="msg_successfull">Covid Test with ID 1 found successfully &emsp;<i class="fas fa-check-circle"></i></h5>
                     <div class="card shadow">
                         <h5 class="card-header">Test ID :</h5>
                         <div class="card-body">
@@ -90,10 +89,10 @@
                                 <a href="#" class="card-link btn btn-primary shadow" onclick="clearForm()">Cancel</a>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 </div>
-                <div id="covidTestDetails-fail">
-                    <h5 class="ct_error">Covid Test with ID  is not found &emsp;<i class="fas fa-times-circle"></i></h5>
+                <div id="covidTestDetails-fail" class="invisible">
+                    <h5 class="msg_error">Covid Test with ID 1 is not found &emsp;<i class="fas fa-times-circle"></i></h5>
                 </div>
             </section>
 
