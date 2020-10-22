@@ -10,9 +10,8 @@
     <script src="https://kit.fontawesome.com/4344e99275.js" crossorigin="anonymous"></script>
 
     <!-- local files -->
-    <link rel="shortcut icon" href="img/ctisIcon_noBackgroundV2.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/updateTest.css">
+    <link rel="shortcut icon" href="../img/ctisIcon_noBackgroundV2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav id="container page-content-wrapper">
@@ -21,7 +20,7 @@
               <i class="fas fa-bars" id="menu-icon"></i>
             </button>
             <div class="mx-auto">
-                <img src="img/ctisLogo_bigger_transparent.png" alt="CTIS-logo">
+                <img src="../img/ctisLogo_bigger_transparent.png" alt="CTIS-logo">
             </div>
 
             <div class="dropdown">
@@ -43,14 +42,10 @@
         <!-- side bar -->
         <aside class="bg-light border-right " id="sidebar-wrapper">
             <div class="list-group list-group-flush">
-            <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
-            <a href="recordTest.html" class="list-group-item list-group-item-action bg-light">Record New Test</a>
-            <a href="updateTest.html" class="list-group-item list-group-item-action bg-light highlight">Update Test Result</a>
-            <a href="viewTestReport.html" class="list-group-item list-group-item-action bg-light">Generate Test Report</a>
-            <a href="registerTestCentre.html" class="list-group-item list-group-item-action bg-light">Register Test Centre</a>
-            <a href="registerTester.html" class="list-group-item list-group-item-action bg-light">Register Tester Account</a>
-            <a href="manageTestKitStock.html" class="list-group-item list-group-item-action bg-light">Manage Test Kit Stock</a>
-            <a href="vieweTestingHistory.html" class="list-group-item list-group-item-action bg-light">View Testing History</a>
+                <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
+                <a href="recordTest.html" class="list-group-item list-group-item-action bg-light">Record New Test</a>
+                <a href="updateTest.html" class="list-group-item list-group-item-action bg-light highlight">Update Test Result</a>
+                <a href="viewTestReport.html" class="list-group-item list-group-item-action bg-light">Generate Test Report</a>
             </div>
         </aside>
 
@@ -74,15 +69,31 @@
                     <input type="text" class="form-control" name="covidTest_id">
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary" type="submit" name="add_test" onclick="renderLoader()">Generate Test Details</button>
+                    <button class="btn btn-primary" id="btnGenerate" type="submit" name="add_test" onclick="renderLoader()">Generate Test Details</button>
                 </div>
             </section>
 
             <section id="testDetails">
-                <div id="covidTestDetails">
-                    <h5>Covid Test ID found successfully</h5>
+                <div id="covidTestDetails-success" class="invisible">
+                    <h5 class="msg_successfull">Covid Test with ID 1 found successfully &emsp;<i class="fas fa-check-circle"></i></h5>
+                    <div class="card shadow">
+                        <h5 class="card-header">Test ID :</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Test Recorded : </h5>
+                            <h5 class="card-text">Results : none </h5>
+                            <h5 class="card-text">Status : Pending</h5>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex flex-row justify-content">
+                                <a href="includes/test_update.html" class="card-link btn btn-primary shadow">Update Test</a>
+                                <a href="#" class="card-link btn btn-primary shadow" onclick="clearForm()">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                <div id="covidTestDetails-fail" class="invisible">
+                    <h5 class="msg_error">Covid Test with ID 1 is not found &emsp;<i class="fas fa-times-circle"></i></h5>
+                </div>
             </section>
 
 
@@ -91,8 +102,7 @@
     </main>
     <footer></footer>
 
-
-    <script type="text/javascript" src="./views/base.js"></script>
+    <script type="text/javascript" src="../views/updateReport.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

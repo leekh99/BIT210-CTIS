@@ -1,11 +1,16 @@
-const parent = document.getElementById('testDetails');
+const elements = {
+    btnGenerate : document.getElementById('btnGenerate'),
+    testDetails : document.getElementById('testDetails')
+}
+
+
 const renderLoader = () =>{
     const loader = `
         <div class = "loader">
-            <img src="img/loading.gif" alt="">
+            <img src="img/loading.gif" alt="loading">
         </div>
     `;
-    parent.insertAdjacentHTML('afterbegin',loader);
+    elements.testDetails.insertAdjacentHTML('afterbegin',loader);
     setTimeout(clearLoader, 2500);
 };
 

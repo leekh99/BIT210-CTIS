@@ -1,5 +1,5 @@
-const elements = {
-    topBtn : document.getElementById("myBtn"),
+const elements= {
+    topBtn : document.getElementById("btnTop"),
     search : document.getElementById('btnSearch'),
     renderPatientList : document.querySelector('.patient-list')
 }

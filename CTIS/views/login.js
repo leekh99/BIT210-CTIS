@@ -1,4 +1,3 @@
-
 const elements = {
     checkRememberUser: document.getElementById('rememberUser'),
     btnLogin: document.querySelector('.login_btn'),

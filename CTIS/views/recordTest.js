@@ -1,5 +1,3 @@
-console.log("yayyy");
-
 const elements = {
     patientAccountForm : document.getElementById('account-form'),
     testAccountForm : document.getElementById('test-form'),
