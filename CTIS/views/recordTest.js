@@ -1,4 +1,8 @@
-import elements from './base';
+const elements = {
+    patientAccountForm : document.getElementById('account-form'),
+    testAccountForm : document.getElementById('test-form'),
+    checkForm : document.getElementById('chkForm')
+}
 
 
 const formToggle = () =>{

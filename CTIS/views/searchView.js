@@ -1,4 +1,8 @@
-import elements from './base';
+const elements= {
+    topBtn : document.getElementById("btnTop"),
+    search : document.getElementById('btnSearch'),
+    renderPatientList : document.querySelector('.patient-list')
+}
 
         
 // When the user scrolls down 20px from the top of the document, show the button

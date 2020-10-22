@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTIS - Update Test Result</title>
+    <title>CTIS - Record New Test</title>
 
     <!-- setup -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4344e99275.js" crossorigin="anonymous"></script>
 
-    <!-- local files -->
-    <link rel="shortcut icon" href="img/ctisIcon_noBackgroundV2.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/updateTest.css">
+    <!-- local files  -->
+    <link rel="shortcut icon" href="../img/ctisIcon_noBackgroundV2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/recordTest.css">
 </head>
 <body>
     <nav id="container page-content-wrapper">
@@ -21,7 +21,7 @@
               <i class="fas fa-bars" id="menu-icon"></i>
             </button>
             <div class="mx-auto">
-                <img src="img/ctisLogo_bigger_transparent.png" alt="CTIS-logo">
+                <img src="../img/ctisLogo_bigger_transparent.png" alt="CTIS-logo">
             </div>
 
             <div class="dropdown">
@@ -44,8 +44,8 @@
         <aside class="bg-light border-right " id="sidebar-wrapper">
             <div class="list-group list-group-flush">
                 <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
-                <a href="recordTest.html" class="list-group-item list-group-item-action bg-light">Record New Test</a>
-                <a href="updateTest.html" class="list-group-item list-group-item-action bg-light highlight">Update Test Result</a>
+                <a href="recordTest.html" class="list-group-item list-group-item-action bg-light highlight">Record New Test</a>
+                <a href="updateTest.html" class="list-group-item list-group-item-action bg-light">Update Test Result</a>
                 <a href="viewTestReport.html" class="list-group-item list-group-item-action bg-light">Generate Test Report</a>
             </div>
         </aside>
@@ -53,42 +53,76 @@
         <div class="container">
              <!-- breadcrumb navigation -->
              <header>
-                <h2>Update Test Report &nbsp; <i class="fas fa-pencil-alt"></i> </h2>
+                <h2>Record Test &nbsp; <i class="fas fa-vial"></i> </h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item" aria-current="page"><a class="breadcrumb-item disabled" href="#">Update Test Result</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a class="breadcrumb-item disabled" href="#">Record New Test</a></li>
                     </ol>
                 </nav>
             </header>
 
 
-            <!-- add Tester for Test ID -->
-            <section class="py-3">
-                <div class="form-group">
-                    <label for="covidTest_id">Covid Test ID</label>
-                    <input type="text" class="form-control" name="covidTest_id">
+            <section class="py-4">
+                <h5>Does patient already have an account ?  &emsp;
+                    <label class="switch">
+                        <input id="chkForm" type="checkbox" data-toggle="collapse" href="#account-form" onclick="formToggle()">
+                        <span class="slider round"></span>
+                      </label>
+                </h5>
+
+
+                <div class="collapse" id="account-form">
+                    <form action="" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="patient_username">Patient's Username</label>
+                            <input type="text" class="form-control" name="patient_username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient_name">Patient's Name</label>
+                            <input type="text" class="form-control" name="patient_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient_password">Patient's Password</label>
+                            <input type="text" class="form-control" name="patient_password">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient_type">Patient Type</label>
+                            <select class="form-control" name="patient_type">
+                            <option value="returnee">Returnee</option>
+                            <option value="quarantined">Quarantined</option>
+                            <option value="close_contact">Close Contact</option>
+                            <option value="infected">Infected</option>
+                            <option value="suspected">Suspected</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient_symptom">Patient's Symptoms</label>
+                            <textarea class="form-control" name="patient_symptom" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="add_test">CREATE and ADD Test to current Patient Account</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <button class="btn btn-primary" id="btnGenerate" type="submit" name="add_test" onclick="renderLoader()">Generate Test Details</button>
+
+
+                <!-- add test to existing patient account -->
+                <div id="test-form">
+                    <!-- load it from javascript -->
                 </div>
             </section>
-
-            <section id="testDetails">
-                <div id="covidTestDetails">
-                    <h5 class="ct_successfull">Covid Test with ID found successfully &emsp;<i class="fas fa-check-circle"></i></h5>
-                    <h5 class="ct_error">Covid Test with ID  is not found &emsp;<i class="fas fa-times-circle"></i></h5>
-                </div>
-            </section>
-
-
         </div>
 
     </main>
     <footer></footer>
 
-    <script type="text/javascript" src="./views/updateReport.js"></script>
-    <script type="text/javascript" src="./views/base.js"></script>
+    <script type="text/javascript" src="../views/recordTest.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

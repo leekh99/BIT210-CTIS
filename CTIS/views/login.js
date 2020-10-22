@@ -1,4 +1,9 @@
-import elements from './base';
+const elements = {
+    checkRememberUser: document.getElementById('rememberUser'),
+    btnLogin: document.querySelector('.login_btn'),
+    username : document.getElementById('username'),
+    password : document.getElementById('password')
+}
 
 const checkRememberUser = () => {
     if(elements.checkRememberUser.checked && elements.username.value != ''){

@@ -1,4 +1,4 @@
-#covidTestDetails{
+#covidTestDetails-success, #covidTestDetails-fail{
     visibility: hidden;
 }
 
@@ -6,7 +6,6 @@
     background-color: #adebad;
     color: #196619;
     border: 2px solid #196619;
-    visibility: hidden;
     font-weight: 700;
     width: 100%;
     padding: 1rem;
@@ -16,7 +15,6 @@
     background-color: #ff9999;
     color: #800000;
     border: 2px solid #800000;
-    visibility: hidden;
     font-weight: 700;
     width: 100%;
     padding: 1rem;

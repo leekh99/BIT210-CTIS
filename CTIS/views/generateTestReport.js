@@ -1,4 +1,8 @@
-import elements from './base';
+const elements = {
+  piechart : document.getElementById('piechart'),
+  linechart : document.getElementById('linechart'),
+  barchart : document.getElementById('barchart')
+}
 
 
    // Load the Visualization API and the corechart package.
