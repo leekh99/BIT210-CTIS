@@ -1,6 +1,3 @@
-/* Made with love by Mutiullah Samim*/
-
-
 html,body{
 /* background-image: url('https://marissaskin.my/wp-content/uploads/2019/04/134025-cool-medical-wallpaper-2000x1153-ipad-retina.jpg'); */
 background: url('https://blockchainstock.blob.core.windows.net/article/1CCD2BEF26A719CAB2D571154514A5E90E64CF32E69B0C41C69163AF57BAF3F0.jpg');
@@ -32,15 +29,10 @@ color: white;
 .input-group-prepend i{
 width: 100px;
 padding-top: 15px;
-background-color: #950714;
+background-image: linear-gradient(to right bottom, #dba2dd, #803082) !important;
 color: white;
 font-weight: 600;
 border:0;
-}
-
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
 }
 
 .remember{
@@ -55,15 +47,21 @@ margin-left: 15px;
 margin-right: 5px;
 }
 
-.login_btn{
-color: white;
-background-color:#950714 ;
-width: 200px;
+.btn-primary{
+  background-color: #dba2dd !important;
+  background-image: linear-gradient(to right bottom, #dba2dd, #803082) !important;
+  border-color: #dba2dd !important;
+  width: 200px;
+  transition: opacity 0.5s;
 }
 
-.login_btn:hover{
-color: black;
-background-color: white;
+.btn-primary:not(:disabled):not(.disabled):focus{
+  box-shadow: 0 0 5px black;
+}
+
+.btn-primary:hover{
+    opacity: 0.5;
+    box-shadow:  0 0 10px rgba(58, 49, 77, 0.6) !important;
 }
 
 .card-footer h5{

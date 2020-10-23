@@ -31,7 +31,7 @@
                  <!-- account menu -->
                 <aside class="collapse dropdown-menu dropdown-menu-right bg-light" id="accountMenu" >
                     <a href="#" class="dropdown-item bg-light border-bottom">Account</a>
-                    <a href="#" class="dropdown-item bg-light">Logout</a>
+                    <a href="../login.html" class="dropdown-item bg-light">Logout</a>
                 </aside>
             </div>
 
@@ -44,7 +44,7 @@
             <div class="list-group list-group-flush">
                 <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
                 <a href="recordTest.html" class="list-group-item list-group-item-action bg-light">Record New Test</a>
-                <a href="updateTest.html" class="list-group-item list-group-item-action bg-light highlight">Update Test Result</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light highlight">Update Test Result</a>
                 <a href="viewTestReport.html" class="list-group-item list-group-item-action bg-light">Generate Test Report</a>
             </div>
         </aside>
@@ -69,7 +69,7 @@
                     <input type="text" class="form-control" name="covidTest_id" required autofocus>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary" id="btnGenerate" type="submit" name="add_test" onclick="renderLoader()">Generate Test Details</button>
+                    <button class="btn btn-primary shadow" id="btnGenerate" type="submit" name="add_test" onclick="renderLoader()">Generate Test Details</button>
                 </div>
             </section>
 
@@ -102,6 +102,7 @@
     </main>
     <footer></footer>
 
+    <script type="text/javascript" src="../views/tester_chkLogin.js"></script>
     <script type="text/javascript" src="../views/updateReport.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

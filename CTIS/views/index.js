@@ -1,7 +1,8 @@
 const elements= {
     topBtn : document.getElementById("btnTop"),
     search : document.getElementById('btnSearch'),
-    renderPatientList : document.querySelector('.patient-list')
+    renderPatientList : document.querySelector('.patient-list'),
+    loginName : document.getElementById('profile-name')
 }
 
         
@@ -68,6 +69,28 @@ const renderResults = (patient) => {
 const renderAllTest = () => {
 
 }
+
+const checkUser = () =>{
+    if (localStorage.length === 0){
+        let url = window.location.href;
+        url = url.slice(url.indexOf("user"), url.length);
+
+        let user = url.split('&');
+        let check = user[1].replace("check=", "");
+        user = user[0].replace("user=", "");
+
+        localStorage.setItem('loginUser', JSON.stringify({user,check}));
+
+        if (user)
+            elements.loginName.innerHTML = user;
+    }
+    
+    const user = JSON.parse(localStorage.getItem('loginUser'));
+    if (user)
+        elements.loginName.innerHTML = user.user;
+}
  
+
+checkUser();
 
 
