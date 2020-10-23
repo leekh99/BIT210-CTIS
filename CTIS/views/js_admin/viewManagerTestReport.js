@@ -46,6 +46,7 @@ const elements = {
      }
 
 const checkUser = () =>{
+    localStorage.clear();
     if (localStorage.length === 0){
         let url = window.location.href;
         url = url.slice(url.indexOf("user"), url.length);
