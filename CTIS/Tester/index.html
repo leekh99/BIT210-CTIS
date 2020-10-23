@@ -68,24 +68,25 @@
 
             <section id="patient-details">
                 <div class="row">
-                    <section class="patient-list col-md-9 col-xs-12 flex">
+                    <section class="patient-list col-md-12 col-xs-12 flex">
                           <div class="card shadow">
-                            <h5 class="card-header"><span>ID :</span>  Patient name</h5>
+                            <h5 class="card-header"><span class="font-weight-bold">Username :</span>  Patient name <span class="float-right">hello</span></h5>
                             <div class="card-body">
-                              <h5 class="card-title">Patient-type: </h5>
-                              <h5 class="card-text">Symptoms: </h5>
-                              <blockquote>
+                              <p class="card-title"><span class="font-weight-bold">Patient-type:</span>  </p>
+                              <p class="card-text"><span class="font-weight-bold">Symptoms:</span></p>
+                              <blockquote class="px-2">
                                   <p>bla bla bla</p>
                                   <footer class="blockquote-footer">dr tan</footer>
                               </blockquote>
                             </div>
                             <ul class="list-group border-top list-group-flush">
-                              <li class="list-group-item">Covid Test Taken: </li>
-                              <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">T1: cough</li>
-                              </ul>
+                              <li class="list-group-item"><span class="font-weight-bold">Covid Test Taken:</span> 
+                                    <p class="py-3">T1 (19/10/2020) &emsp; &emsp; T1 (19/10/2020)</p>
+
+                              </li>
+
                             </ul>
-                            <div class="card-body">
+                            <div class="card-footer">
                                 <div class="d-flex flex-row justify-content">
                                     <a href="#" class="card-link btn btn-primary shadow">Record New Test</a>
                                     <a href="#" class="card-link btn btn-primary shadow">Update Test Result</a>
@@ -149,19 +150,21 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
+
         if(window.matchMedia('(max-width: 767px)').matches){
             $("#wrapper").toggleClass("toggled");
             $("#menu-icon").removeClass("fas fa-times");
             $("#menu-icon").addClass("fas fa-bars");
+            $("#btnTop").toggleClass("invisible");
         }
-
 
         $("#menu-toggle").click(function() {
             $("#wrapper").toggleClass("toggled");
             $("#menu-icon").toggleClass("fas fa-bars");
             $("#menu-icon").toggleClass("fas fa-times");
-
         });
+
+        
       </script>
 </body>
 </html>
