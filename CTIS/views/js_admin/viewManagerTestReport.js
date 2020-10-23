@@ -2,7 +2,9 @@ const elements = {
     piechart : document.getElementById('piechart'),
     linechart : document.getElementById('linechart'),
     barchart : document.getElementById('barchart'),
-    loginName : document.getElementById('profile-name')
+    loginName : document.getElementById('profile-name'),
+    sort : document.getElementById('sortBy'),
+    testTableRow : document.getElementById('testTableRow')
   }
   
   
@@ -65,6 +67,82 @@ const checkUser = () =>{
     if (user)
         elements.loginName.innerHTML = user.user;
 }
-     
+
+// const covidTest1 = {
+//   covidTestID : "CT1",
+//   recipient : "Matthew",
+//   tester : "Dr.Lee",
+//   testType : "Antigen",
+//   testDate : "21/20/2020",
+//   result : "Negative",
+//   resultDate : "22/10/2020",
+//   status : "Completed"
+// }
+
+// const covidTest2 = {
+//   covidTestID : "CT12",
+//   recipient : "Amber",
+//   tester : "Dr.Tan",
+//   testType : "Rapid Detection",
+//   testDate : "23/10/2020",
+//   result : "-",
+//   resultDate : "23/10/2020",
+//   status : "Pending"
+// }
+
+// const covidTest3 = {
+//   covidTestID : "CT3",
+//   recipient : "Jean",
+//   tester : "Dr.Han",
+//   testType : "Molecular",
+//   testDate : "17/10/2020",
+//   result : "Positive",
+//   resultDate : "19/10/2020",
+//   status : "Completed"
+// }
+
+// const data = [covidTest1,covidTest2,covidTest3];
+
+
+// const compareByCovidTestID = (lhs,rhs) => {
+//   const idLhs = lhs.slice(2, lhs.length);
+//   const idRhs = rhs.slice(2, rhs.length);
+
+//   if (idLhs < idRhs)
+//     return -1;
+//   else if (idLhs > idRhs)
+//     return 1;
+//   else 
+//     return 0;
+// }
+
+// const renderRowTable = (testData) => {
+//   const markup = `
+//   <tr>
+//     <th scope="row">${testData.covidTestID}</th>
+//     <td>${testData.recipient}</td>
+//     <td>${testData.tester}</td>
+//     <td>${testData.testType}</td>
+//     <td>${testData.testDate}</td>
+//     <td>${testData.result}</td>
+//     <td>${testData.resultDate}</td>
+//     <td>${testData.status}</td>
+//   </tr>
+//   `;
+
+//   elements.tester.insertAdjacentHTML('beforeend', markup);
+// }
+
+// const sorting = () => {
+//   console.log("sorting ...");
+//   console.log(elements.sort.value);
+//     if (elements.sort.value === "CovidTestID"){
+   
+//       data.sort(compareByCovidTestID());
+//       data.forEach(element => {
+//         renderRowTable(element);
+//       });
+//     }
+// }
     
-    checkUser();
+checkUser();
