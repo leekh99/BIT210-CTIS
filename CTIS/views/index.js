@@ -138,6 +138,6 @@ patients.forEach(element => {
      renderPatient(element, "James");
  });
 
-// checkUser();
+checkUser();
 
 

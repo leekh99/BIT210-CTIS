@@ -82,8 +82,11 @@
                       <a class="nav-link active" id="analysis-tab" data-toggle="tab" href="#analysis-test" role="tab" aria-selected="true">Analysis Test Report</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="table-tab" data-toggle="tab" href="#table-test" role="tab" aria-selected="false">Table Test Report</a>
+                      <a class="nav-link" id="table-tab" data-toggle="tab" href="#table-test" role="tab" aria-selected="false">Table Test Reports</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="table-tab" data-toggle="tab" href="#tester-list" role="tab" aria-selected="false">Tester List</a>
+                      </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
@@ -137,12 +140,61 @@
 
                     </section>
 
-
                     <section class="tab-pane py-3 fade" id="table-test" role="tabpanel" aria-labelledby="table-tab">
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr>
-                                <th scope="col">#</th>
+                                    <th scope="col">CovidTestID</th>
+                                    <th scope="col">Recipient</th>
+                                    <th scope="col">Tester</th>
+                                    <th scope="col">TestType</th>
+                                    <th scope="col">TestDate</th>
+                                    <th scope="col">Result</th>
+                                    <th scope="col">ResultDate</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">CT1</th>
+                                <td>Matthew</td>
+                                <td>Dr.Lee</td>
+                                <td>Antigen</td>
+                                <td>21/10/2020</td>
+                                <td>Negative</td>
+                                <td>22/10/2020</td>
+                                <td>Completed</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">CT2</th>
+                                <td>Amber</td>
+                                <td>Dr.Tan</td>
+                                <td>Rapid Detection</td>
+                                <td>23/10/2020</td>
+                                <td>-</td>
+                                <td>23/10/2020</td>
+                                <td>Pending</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">CT3</th>
+                                <td>Jean</td>
+                                <td>Dr.Han</td>
+                                <td>Molecular</td>
+                                <td>17/10/2020</td>
+                                <td>Positive</td>
+                                <td>19/10/2020</td>
+                                <td>Completed</td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </section>
+
+
+                    <section class="tab-pane py-3 fade" id="tester-list" role="tabpanel" aria-labelledby="table-tab">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                <th scope="col">Username</th>
                                 <th scope="col">First</th>
                                 <th scope="col">Last</th>
                                 <th scope="col">Handle</th>
